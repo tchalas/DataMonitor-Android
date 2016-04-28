@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+	    android:id="@+id/battery"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
+	    android:onClick="onButtonClicked"
+	    android:text="Battery" />
+    
+    
+    <Button
+	    android:id="@+id/gps"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
+	    android:onClick="onButtonClicked"
+	    android:text="GPS" />
+
+    
+    <Button
+	    android:id="@+id/geninfo"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
+	    android:onClick="onButtonClicked"
+	    android:text="General Info" />
+ 
+</LinearLayout>

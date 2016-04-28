@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.systeminfo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.example.systeminfo.Memory"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.systeminfo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.webservice.WebService"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.systeminfo.GPS_Info"
+            android:alwaysRetainTaskState="True"
+            android:label="@string/title_activity_gps__info"
+            android:launchMode="singleInstance" >
+        </activity>
+        
+        <activity
+            android:name="com.example.systeminfo.BatteryStatus"
+            android:alwaysRetainTaskState="True"
+            android:label="@string/title_activity_battery_status"
+            android:launchMode="singleInstance">
+        </activity>
+        
+        <activity
+            android:name="com.example.systeminfo.General_Info"
+            android:label="@string/title_activity_general__info"
+            android:parentActivityName="com.example.systeminfo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.systeminfo.MainActivity" />
+        </activity>
+
+        <service
+            android:name="com.example.systeminfo.GpsTracker"
+            android:enabled="true" >
+        </service>
+        
+        <service
+            android:name="com.example.systeminfo.BatteryService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.example.systeminfo.BatteryActivity"
+            android:label="@string/title_activity_battery"
+            android:parentActivityName="com.example.systeminfo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.systeminfo.MainActivity" />
+        </activity>
+        
+    </application>
+
+</manifest>

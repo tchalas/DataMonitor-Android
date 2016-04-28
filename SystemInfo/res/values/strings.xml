@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">System Info</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_gps__info">GPS_Info</string>
+    <string name="title_activity_battery_status">BatteryStatus</string>
+    <string name="title_activity_gps">Gps</string>
+    <string name="title_activity_general__info">General_Info</string>
+    <string name="title_activity_web_service">WebService</string>
+    <string name="title_activity_battery">BatteryActivity</string>
+
+</resources>
